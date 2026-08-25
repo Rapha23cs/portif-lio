@@ -1,0 +1,161 @@
+import { ExternalLink, Code2 } from 'lucide-react';
+import './Projects.css';
+
+const Projects = () => {
+  const projects = [
+    {
+      title: 'Plataforma E-commerce',
+      description: 'Uma loja virtual completa construída com React e Node.js. Inclui painel administrativo, carrinho de compras e integração com pagamentos.',
+      tags: ['React', 'Node.js', 'Stripe', 'MongoDB'],
+      image: 'https://images.unsplash.com/photo-1557821552-17105176677c?q=80&w=1000&auto=format&fit=crop',
+      github: '#',
+      demo: '#'
+    },
+    {
+      title: 'App de Gestão de Eventos',
+      description: 'Aplicativo voltado para a organização de eventos. Foco total em uma interface limpa, responsiva e performática para os organizadores.',
+      tags: ['React Native', 'Firebase', 'Tailwind'],
+      image: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=1000&auto=format&fit=crop',
+      github: '#',
+      demo: '#'
+    },
+    {
+      title: 'Dashboard Financeiro',
+      description: 'Painel interativo para acompanhamento de métricas financeiras usando gráficos dinâmicos e atualizações em tempo real via WebSockets.',
+      tags: ['Vite', 'Recharts', 'TypeScript'],
+      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000&auto=format&fit=crop',
+      github: '#',
+      demo: '#'
+    }
+  ];
+
+  return (
+    <section id="projects" className="section projects-section">
+      <div className="container">
+        <div className="section-header">
+          <h2 className="section-title">Meus <span className="text-gradient">Projetos</span></h2>
+          <div className="title-underline"></div>
+        </div>
+
+        <div className="featured-dashboard glass-card">
+          <div className="dashboard-info">
+            <h3 className="text-gradient">Dashboard Estratégico (Power BI)</h3>
+            <p>
+              Painel interativo em Power BI desenvolvido para fornecer análises de dados avançadas 
+              e visualizações que apoiam a tomada de decisões estratégicas em tempo real.
+            </p>
+            <div className="project-tags">
+              <span className="tag">Power BI</span>
+              <span className="tag">Data Analytics</span>
+              <span className="tag">SQL</span>
+            </div>
+          </div>
+          <div className="dashboard-iframe-wrapper powerbi">
+            <div className="browser-header">
+              <span className="dot dot-red"></span>
+              <span className="dot dot-yellow"></span>
+              <span className="dot dot-green"></span>
+            </div>
+            <iframe 
+              title="projeto" 
+              src="https://app.powerbi.com/view?r=eyJrIjoiMjdmMmQzMDUtNWY1YS00Y2FjLWFjMWItNzM5MTI5NWMyMGU2IiwidCI6IjRlZTgxOGY4LWNiZWUtNGIwMy1iZTAxLWYwYzIxN2E5NGJlYSJ9" 
+              frameBorder="0" 
+              allowFullScreen={true}>
+            </iframe>
+          </div>
+        </div>
+
+        <div className="featured-dashboard glass-card reversed">
+          <div className="dashboard-iframe-wrapper powerbi">
+            <div className="browser-header">
+              <span className="dot dot-red"></span>
+              <span className="dot dot-yellow"></span>
+              <span className="dot dot-green"></span>
+            </div>
+            <iframe 
+              title="Projeto - Ordens de Serviço" 
+              src="https://app.powerbi.com/view?r=eyJrIjoiODMzMDdmOTAtYjk0Yi00ZjY3LWI3NmMtMmVjNjhiODEyNjczIiwidCI6IjRlZTgxOGY4LWNiZWUtNGIwMy1iZTAxLWYwYzIxN2E5NGJlYSJ9" 
+              frameBorder="0" 
+              allowFullScreen={true}>
+            </iframe>
+          </div>
+          <div className="dashboard-info">
+            <h3 className="text-gradient">Dashboard: Ordens de Serviço</h3>
+            <p>
+              Painel dinâmico focado no acompanhamento e gestão de Ordens de Serviço. 
+              Permite monitorar indicadores de performance (KPIs), status de solicitações 
+              e garantir eficiência na operação.
+            </p>
+            <div className="project-tags">
+              <span className="tag">Power BI</span>
+              <span className="tag">Gestão</span>
+              <span className="tag">KPIs</span>
+            </div>
+          </div>
+        </div>
+
+        <div className="featured-dashboard glass-card">
+          <div className="dashboard-info">
+            <h3 className="text-gradient">App de Gestão de Eventos (Foco)</h3>
+            <p>
+              Plataforma web completa para gestão de eventos, desenvolvida com React e Vite.
+              Oferece uma interface rápida, moderna e interativa, totalmente pensada para a 
+              melhor experiência dos usuários e organizadores.
+            </p>
+            <div className="project-tags">
+              <span className="tag">React</span>
+              <span className="tag">Vite</span>
+              <span className="tag">Frontend</span>
+            </div>
+          </div>
+          <div className="dashboard-iframe-wrapper">
+            <div className="browser-header">
+              <span className="dot dot-red"></span>
+              <span className="dot dot-yellow"></span>
+              <span className="dot dot-green"></span>
+            </div>
+            <iframe 
+              title="App de Eventos Foco" 
+              src="https://site---eventos-foco.raphael-csa23.workers.dev/" 
+              frameBorder="0" 
+              allowFullScreen={true}>
+            </iframe>
+          </div>
+        </div>
+
+        <div className="projects-grid">
+          {projects.map((project, index) => (
+            <div key={index} className="project-card glass-card">
+              <div className="project-image-container">
+                <div 
+                  className="project-image" 
+                  style={{ backgroundImage: `url(${project.image})` }}
+                ></div>
+                <div className="project-overlay">
+                  <a href={project.github} className="project-link" aria-label="GitHub">
+                    <Code2 size={24} />
+                  </a>
+                  <a href={project.demo} className="project-link" aria-label="Live Demo">
+                    <ExternalLink size={24} />
+                  </a>
+                </div>
+              </div>
+              
+              <div className="project-info">
+                <h3>{project.title}</h3>
+                <p>{project.description}</p>
+                <div className="project-tags">
+                  {project.tags.map((tag, i) => (
+                    <span key={i} className="tag">{tag}</span>
+                  ))}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Projects;

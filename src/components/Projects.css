@@ -112,13 +112,14 @@
 }
 
 .tag {
-  background: rgba(0, 255, 204, 0.1);
-  color: var(--accent-color);
-  padding: 0.3rem 0.8rem;
+  background: rgba(139, 92, 246, 0.1);
+  color: var(--text-primary);
+  padding: 0.35rem 0.9rem;
   border-radius: 20px;
   font-size: 0.8rem;
   font-weight: 500;
-  border: 1px solid rgba(0, 255, 204, 0.2);
+  border: 1px solid rgba(139, 92, 246, 0.3);
+  letter-spacing: 0.5px;
 }
 
 /* Featured Dashboard */
@@ -163,7 +164,7 @@
   flex: 2.2;
   width: 100%;
   min-height: 450px;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(9, 9, 11, 0.8);
   display: flex;
   flex-direction: column;
 }
@@ -194,12 +195,12 @@
 .dot-green { background: #27c93f; }
 
 .featured-dashboard .dashboard-iframe-wrapper {
-  border-left: 1px solid rgba(0, 255, 204, 0.1);
+  border-left: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .featured-dashboard.reversed .dashboard-iframe-wrapper {
   border-left: none;
-  border-right: 1px solid rgba(0, 255, 204, 0.1);
+  border-right: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 @media (max-width: 1023px) {
@@ -207,7 +208,7 @@
   .featured-dashboard.reversed .dashboard-iframe-wrapper {
     border-left: none;
     border-right: none;
-    border-top: 1px solid rgba(0, 255, 204, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
   }
 }
 

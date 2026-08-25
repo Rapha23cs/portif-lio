@@ -1,18 +1,18 @@
 :root {
-  /* Absolute black background */
-  --bg-dark: #000000;
-  --bg-surface: rgba(10, 10, 10, 0.6);
-  --bg-surface-hover: rgba(20, 20, 20, 0.8);
+  /* Elegant Dark Backgrounds */
+  --bg-dark: #09090b; /* Zinc 950 */
+  --bg-surface: rgba(24, 24, 27, 0.65); /* Zinc 900 translucent */
+  --bg-surface-hover: rgba(39, 39, 42, 0.8); /* Zinc 800 */
   
   /* Text colors */
-  --text-primary: #ffffff;
-  --text-secondary: #a0a0a0;
+  --text-primary: #fafafa;
+  --text-secondary: #a1a1aa;
   
-  /* Cold Neon Palette */
-  --accent-color: #00ffcc;      /* Neon Teal/Mint */
-  --accent-secondary: #0055ff;  /* Deep Blue */
-  --accent-glow: rgba(0, 255, 204, 0.6);
-  --accent-secondary-glow: rgba(0, 85, 255, 0.6);
+  /* Modern Premium Palette (Indigo/Violet) */
+  --accent-color: #8b5cf6;      /* Violet 500 */
+  --accent-secondary: #3b82f6;  /* Blue 500 */
+  --accent-glow: rgba(139, 92, 246, 0.3);
+  --accent-secondary-glow: rgba(59, 130, 246, 0.3);
 
   --font-main: 'Inter', system-ui, -apple-system, sans-serif;
   --font-heading: 'Outfit', 'Inter', system-ui, -apple-system, sans-serif;
@@ -38,7 +38,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Background Gradients - cyber/neon vibe */
+/* Background Gradients - Subtle and elegant */
 body::before {
   content: '';
   position: fixed;
@@ -46,8 +46,8 @@ body::before {
   left: -50%;
   width: 200%;
   height: 200%;
-  background: radial-gradient(circle at 50% 50%, rgba(0, 85, 255, 0.08) 0%, transparent 50%),
-              radial-gradient(circle at 80% 20%, rgba(0, 255, 204, 0.08) 0%, transparent 50%);
+  background: radial-gradient(circle at 50% 50%, rgba(59, 130, 246, 0.04) 0%, transparent 60%),
+              radial-gradient(circle at 80% 20%, rgba(139, 92, 246, 0.05) 0%, transparent 50%);
   z-index: -1;
   pointer-events: none;
 }
@@ -73,42 +73,40 @@ ul {
   list-style: none;
 }
 
-/* Darker Glassmorphism */
+/* Refined Glassmorphism */
 .glass {
-  background: rgba(0, 0, 0, 0.7);
-  backdrop-filter: blur(15px);
-  -webkit-backdrop-filter: blur(15px);
-  border: 1px solid rgba(0, 255, 204, 0.1);
+  background: rgba(9, 9, 11, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .glass-card {
   background: var(--bg-surface);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   border: 1px solid rgba(255, 255, 255, 0.05);
   border-radius: 16px;
-  transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), background 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
 .glass-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-4px);
   background: var(--bg-surface-hover);
-  /* Neon border and shadow on hover */
-  border: 1px solid var(--accent-color);
-  box-shadow: 0 0 20px rgba(0, 255, 204, 0.2), inset 0 0 10px rgba(0, 255, 204, 0.1);
+  border-color: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(139, 92, 246, 0.1);
 }
 
-/* Gradient text with neon pop */
+/* Gradient text - sleek linear gradient */
 .text-gradient {
-  background: linear-gradient(135deg, var(--accent-color), var(--accent-secondary));
+  background: linear-gradient(135deg, #e0e7ff 0%, var(--accent-color) 50%, var(--accent-secondary) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  /* Text shadow doesn't work well with background-clip directly, but the contrast helps */
-  filter: drop-shadow(0 0 8px rgba(0, 255, 204, 0.4));
 }
 
-/* Buttons with strong neon glow */
+/* Buttons with elegant interactions */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -116,39 +114,38 @@ ul {
   gap: 0.5rem;
   padding: 0.8rem 1.5rem;
   border-radius: 8px;
-  font-weight: 600;
+  font-weight: 500;
   cursor: pointer;
-  transition: all 0.3s ease;
-  border: none;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid transparent;
   font-family: var(--font-main);
-  font-size: 1rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, var(--accent-color), var(--accent-secondary));
-  color: #000; /* Contrast against neon */
-  font-weight: 800;
-  box-shadow: 0 0 15px var(--accent-glow);
+  background: var(--text-primary);
+  color: var(--bg-dark);
+  font-weight: 600;
+  box-shadow: 0 4px 14px rgba(255, 255, 255, 0.1);
 }
 
 .btn-primary:hover {
-  box-shadow: 0 0 25px var(--accent-glow), 0 0 15px var(--accent-secondary-glow);
-  transform: translateY(-2px) scale(1.02);
+  background: #e4e4e7; /* zinc-200 */
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px);
 }
 
 .btn-outline {
-  background: transparent;
-  color: var(--accent-color);
-  border: 1px solid var(--accent-color);
-  box-shadow: 0 0 10px rgba(0, 255, 204, 0.2), inset 0 0 5px rgba(0, 255, 204, 0.2);
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--text-primary);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .btn-outline:hover {
-  background: rgba(0, 255, 204, 0.1);
-  box-shadow: 0 0 20px rgba(0, 255, 204, 0.4), inset 0 0 10px rgba(0, 255, 204, 0.4);
-  text-shadow: 0 0 5px var(--accent-color);
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
 }
 
 /* Layout Utilities */

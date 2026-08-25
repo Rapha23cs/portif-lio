@@ -123,6 +123,34 @@ const Projects = () => {
           </div>
         </div>
 
+        <div className="featured-dashboard glass-card reversed">
+          <div className="dashboard-iframe-wrapper powerbi">
+            <div className="browser-header">
+              <span className="dot dot-red"></span>
+              <span className="dot dot-yellow"></span>
+              <span className="dot dot-green"></span>
+            </div>
+            <iframe 
+              title="Orçamento Anual - Raphael" 
+              src="https://app.powerbi.com/view?r=eyJrIjoiOWE2YmY2ZTAtZTlkYi00NDA2LWEzZTctYmQxOTEyZGNjMWRkIiwidCI6IjRlZTgxOGY4LWNiZWUtNGIwMy1iZTAxLWYwYzIxN2E5NGJlYSJ9" 
+              frameBorder="0" 
+              allowFullScreen={true}>
+            </iframe>
+          </div>
+          <div className="dashboard-info">
+            <h3 className="text-gradient">Dashboard: Orçamento Anual</h3>
+            <p>
+              Painel para acompanhamento do orçamento anual, proporcionando uma visão clara de receitas, 
+              despesas e metas financeiras ao longo do ano.
+            </p>
+            <div className="project-tags">
+              <span className="tag">Power BI</span>
+              <span className="tag">Finanças</span>
+              <span className="tag">Orçamento</span>
+            </div>
+          </div>
+        </div>
+
         <div className="projects-grid">
           {projects.map((project, index) => (
             <div key={index} className="project-card glass-card">

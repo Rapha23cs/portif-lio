@@ -61,26 +61,6 @@ const Contact = () => {
             </div>
           </div>
 
-          <form className="contact-form glass-card" onSubmit={(e) => e.preventDefault()}>
-            <div className="form-group">
-              <label htmlFor="name">Seu Nome</label>
-              <input type="text" id="name" placeholder="Como gostaria de ser chamado?" />
-            </div>
-            
-            <div className="form-group">
-              <label htmlFor="email">Seu Email</label>
-              <input type="email" id="email" placeholder="Para eu poder responder..." />
-            </div>
-            
-            <div className="form-group">
-              <label htmlFor="message">Sua Mensagem</label>
-              <textarea id="message" rows="5" placeholder="Do que você precisa?"></textarea>
-            </div>
-            
-            <button type="submit" className="btn btn-primary submit-btn">
-              Enviar Mensagem
-            </button>
-          </form>
         </div>
       </div>
     </section>

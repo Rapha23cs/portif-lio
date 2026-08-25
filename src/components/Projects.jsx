@@ -2,32 +2,7 @@ import { ExternalLink, Code2 } from 'lucide-react';
 import './Projects.css';
 
 const Projects = () => {
-  const projects = [
-    {
-      title: 'Plataforma E-commerce',
-      description: 'Uma loja virtual completa construída com React e Node.js. Inclui painel administrativo, carrinho de compras e integração com pagamentos.',
-      tags: ['React', 'Node.js', 'Stripe', 'MongoDB'],
-      image: 'https://images.unsplash.com/photo-1557821552-17105176677c?q=80&w=1000&auto=format&fit=crop',
-      github: '#',
-      demo: '#'
-    },
-    {
-      title: 'App de Gestão de Eventos',
-      description: 'Aplicativo voltado para a organização de eventos. Foco total em uma interface limpa, responsiva e performática para os organizadores.',
-      tags: ['React Native', 'Firebase', 'Tailwind'],
-      image: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=1000&auto=format&fit=crop',
-      github: '#',
-      demo: '#'
-    },
-    {
-      title: 'Dashboard Financeiro',
-      description: 'Painel interativo para acompanhamento de métricas financeiras usando gráficos dinâmicos e atualizações em tempo real via WebSockets.',
-      tags: ['Vite', 'Recharts', 'TypeScript'],
-      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000&auto=format&fit=crop',
-      github: '#',
-      demo: '#'
-    }
-  ];
+
 
   return (
     <section id="projects" className="section projects-section">
@@ -151,36 +126,7 @@ const Projects = () => {
           </div>
         </div>
 
-        <div className="projects-grid">
-          {projects.map((project, index) => (
-            <div key={index} className="project-card glass-card">
-              <div className="project-image-container">
-                <div 
-                  className="project-image" 
-                  style={{ backgroundImage: `url(${project.image})` }}
-                ></div>
-                <div className="project-overlay">
-                  <a href={project.github} className="project-link" aria-label="GitHub">
-                    <Code2 size={24} />
-                  </a>
-                  <a href={project.demo} className="project-link" aria-label="Live Demo">
-                    <ExternalLink size={24} />
-                  </a>
-                </div>
-              </div>
-              
-              <div className="project-info">
-                <h3>{project.title}</h3>
-                <p>{project.description}</p>
-                <div className="project-tags">
-                  {project.tags.map((tag, i) => (
-                    <span key={i} className="tag">{tag}</span>
-                  ))}
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
+
       </div>
     </section>
   );

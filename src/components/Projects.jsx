@@ -71,34 +71,17 @@ const Projects = () => {
 
         <div className="featured-dashboard glass-card">
           <div className="dashboard-info">
-            <h3 className="text-gradient">App de Gestão de Eventos (Foco)</h3>
+            <h3 className="text-gradient">Dashboard: Orçamento Anual</h3>
             <p>
-              Plataforma web completa para gestão de eventos, desenvolvida com React e Vite.
-              Oferece uma interface rápida, moderna e interativa, totalmente pensada para a 
-              melhor experiência dos usuários e organizadores.
+              Painel para acompanhamento do orçamento anual, proporcionando uma visão clara de receitas, 
+              despesas e metas financeiras ao longo do ano.
             </p>
             <div className="project-tags">
-              <span className="tag">React</span>
-              <span className="tag">Vite</span>
-              <span className="tag">Frontend</span>
+              <span className="tag">Power BI</span>
+              <span className="tag">Finanças</span>
+              <span className="tag">Orçamento</span>
             </div>
           </div>
-          <div className="dashboard-iframe-wrapper">
-            <div className="browser-header">
-              <span className="dot dot-red"></span>
-              <span className="dot dot-yellow"></span>
-              <span className="dot dot-green"></span>
-            </div>
-            <iframe 
-              title="App de Eventos Foco" 
-              src="https://site---eventos-foco.raphael-csa23.workers.dev/" 
-              frameBorder="0" 
-              allowFullScreen={true}>
-            </iframe>
-          </div>
-        </div>
-
-        <div className="featured-dashboard glass-card reversed">
           <div className="dashboard-iframe-wrapper powerbi">
             <div className="browser-header">
               <span className="dot dot-red"></span>
@@ -112,16 +95,33 @@ const Projects = () => {
               allowFullScreen={true}>
             </iframe>
           </div>
+        </div>
+
+        <div className="featured-dashboard glass-card reversed">
+          <div className="dashboard-iframe-wrapper">
+            <div className="browser-header">
+              <span className="dot dot-red"></span>
+              <span className="dot dot-yellow"></span>
+              <span className="dot dot-green"></span>
+            </div>
+            <iframe 
+              title="App de Eventos Foco" 
+              src="https://site---eventos-foco.raphael-csa23.workers.dev/" 
+              frameBorder="0" 
+              allowFullScreen={true}>
+            </iframe>
+          </div>
           <div className="dashboard-info">
-            <h3 className="text-gradient">Dashboard: Orçamento Anual</h3>
+            <h3 className="text-gradient">App de Gestão de Eventos (Foco)</h3>
             <p>
-              Painel para acompanhamento do orçamento anual, proporcionando uma visão clara de receitas, 
-              despesas e metas financeiras ao longo do ano.
+              Plataforma web completa para gestão de eventos, desenvolvida com React e Vite.
+              Oferece uma interface rápida, moderna e interativa, totalmente pensada para a 
+              melhor experiência dos usuários e organizadores.
             </p>
             <div className="project-tags">
-              <span className="tag">Power BI</span>
-              <span className="tag">Finanças</span>
-              <span className="tag">Orçamento</span>
+              <span className="tag">React</span>
+              <span className="tag">Vite</span>
+              <span className="tag">Frontend</span>
             </div>
           </div>
         </div>

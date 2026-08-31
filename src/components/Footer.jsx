@@ -15,7 +15,7 @@ const Footer = () => {
         </p>
         
         <div className="footer-made-with">
-          Feito com 💜 usando React & Vite
+          React e Vite
         </div>
       </div>
     </footer>

@@ -98,19 +98,33 @@ const Projects = () => {
         </div>
 
         <div className="featured-dashboard glass-card reversed">
-          <div className="dashboard-iframe-wrapper">
+          <div className="dashboard-iframe-wrapper powerbi">
             <div className="browser-header">
               <span className="dot dot-red"></span>
               <span className="dot dot-yellow"></span>
               <span className="dot dot-green"></span>
             </div>
             <iframe 
-              title="App de Eventos Foco" 
-              src="https://site---eventos-foco.raphael-csa23.workers.dev/" 
+              title="SistemaHTML" 
+              src="https://app.powerbi.com/view?r=eyJrIjoiNmY2YWJjMjItNzQ5ZS00MDQzLTkwOGItOGMyOWNiYjdmNTBkIiwidCI6IjRlZTgxOGY4LWNiZWUtNGIwMy1iZTAxLWYwYzIxN2E5NGJlYSJ9" 
               frameBorder="0" 
               allowFullScreen={true}>
             </iframe>
           </div>
+          <div className="dashboard-info">
+            <h3 className="text-gradient">Vendas de Eletrônicos</h3>
+            <p>
+              Projeto de vendas de eletrônicos desenvolvido inteiramente em HTML, focado na exibição de dados estruturados de e-commerce e produtos eletrônicos.
+            </p>
+            <div className="project-tags">
+              <span className="tag">HTML</span>
+              <span className="tag">Vendas</span>
+              <span className="tag">E-commerce</span>
+            </div>
+          </div>
+        </div>
+
+        <div className="featured-dashboard glass-card">
           <div className="dashboard-info">
             <h3 className="text-gradient">App de Gestão de Eventos (Foco)</h3>
             <p>
@@ -123,6 +137,19 @@ const Projects = () => {
               <span className="tag">Vite</span>
               <span className="tag">Frontend</span>
             </div>
+          </div>
+          <div className="dashboard-iframe-wrapper">
+            <div className="browser-header">
+              <span className="dot dot-red"></span>
+              <span className="dot dot-yellow"></span>
+              <span className="dot dot-green"></span>
+            </div>
+            <iframe 
+              title="App de Eventos Foco" 
+              src="https://site---eventos-foco.raphael-csa23.workers.dev/" 
+              frameBorder="0" 
+              allowFullScreen={true}>
+            </iframe>
           </div>
         </div>
 

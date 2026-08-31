@@ -20,7 +20,7 @@ const About = () => {
         <div className="about-content">
           <div className="about-text glass-card">
             <p>
-              Olá! Sou apaixonado por criar interfaces que não apenas parecem incríveis, 
+              Olá! Me dedico a criar interfaces que não apenas parecem incríveis, 
               mas também oferecem uma experiência de usuário excepcional. Minha jornada no 
               desenvolvimento web começou com a curiosidade de entender como as coisas 
               funcionavam nos bastidores da internet.

@@ -1,4 +1,5 @@
 import { ExternalLink, Code2 } from 'lucide-react';
+import printGAB from '../assets/print-gab.png';
 import './Projects.css';
 
 const Projects = () => {
@@ -162,7 +163,7 @@ const Projects = () => {
             </div>
             <a href="https://sistema-gab-assesp.onrender.com" target="_blank" rel="noopener noreferrer" className="project-image-link">
               <img 
-                src="https://placehold.co/800x450/1e1e24/00ffcc?text=Screenshot+Sistema+GAB" 
+                src={printGAB} 
                 alt="Sistema GAB Assesp" 
                 className="project-screenshot"
               />

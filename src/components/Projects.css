@@ -112,13 +112,13 @@
 }
 
 .tag {
-  background: rgba(139, 92, 246, 0.1);
+  background: var(--accent-glow, rgba(59, 130, 246, 0.1));
   color: var(--text-primary);
   padding: 0.35rem 0.9rem;
   border-radius: 20px;
   font-size: 0.8rem;
   font-weight: 500;
-  border: 1px solid rgba(139, 92, 246, 0.3);
+  border: 1px solid var(--accent-glow, rgba(59, 130, 246, 0.3));
   letter-spacing: 0.5px;
 }
 

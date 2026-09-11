@@ -1,4 +1,4 @@
-import { ExternalLink, Code2 } from 'lucide-react';
+import { ExternalLink } from 'lucide-react';
 import printGAB from '../assets/print-gab.png';
 import './Projects.css';
 

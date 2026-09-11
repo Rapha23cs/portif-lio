@@ -153,6 +153,33 @@ const Projects = () => {
           </div>
         </div>
 
+        <div className="featured-dashboard glass-card reversed">
+          <div className="dashboard-iframe-wrapper">
+            <div className="browser-header">
+              <span className="dot dot-red"></span>
+              <span className="dot dot-yellow"></span>
+              <span className="dot dot-green"></span>
+            </div>
+            <iframe 
+              title="Sistema GAB Assesp" 
+              src="https://sistema-gab-assesp.onrender.com" 
+              frameBorder="0" 
+              allowFullScreen={true}>
+            </iframe>
+          </div>
+          <div className="dashboard-info">
+            <h3 className="text-gradient">Sistema GAB Assesp</h3>
+            <p>
+              Sistema web desenvolvido para auxiliar nas atividades diárias do GAB Assesp,
+              oferecendo recursos para organização, acompanhamento de demandas e gestão estratégica.
+            </p>
+            <div className="project-tags">
+              <span className="tag">Web App</span>
+              <span className="tag">Gestão</span>
+              <span className="tag">Sistema</span>
+            </div>
+          </div>
+        </div>
 
       </div>
     </section>

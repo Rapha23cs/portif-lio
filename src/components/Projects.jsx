@@ -160,12 +160,17 @@ const Projects = () => {
               <span className="dot dot-yellow"></span>
               <span className="dot dot-green"></span>
             </div>
-            <iframe 
-              title="Sistema GAB Assesp" 
-              src="https://sistema-gab-assesp.onrender.com" 
-              frameBorder="0" 
-              allowFullScreen={true}>
-            </iframe>
+            <a href="https://sistema-gab-assesp.onrender.com" target="_blank" rel="noopener noreferrer" className="project-image-link">
+              <img 
+                src="https://placehold.co/800x450/1e1e24/00ffcc?text=Screenshot+Sistema+GAB" 
+                alt="Sistema GAB Assesp" 
+                className="project-screenshot"
+              />
+              <div className="overlay-link">
+                <span>Acessar o Sistema</span>
+                <ExternalLink size={20} />
+              </div>
+            </a>
           </div>
           <div className="dashboard-info">
             <h3 className="text-gradient">Sistema GAB Assesp</h3>

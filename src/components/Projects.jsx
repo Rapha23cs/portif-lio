@@ -187,6 +187,35 @@ const Projects = () => {
           </div>
         </div>
 
+        <div className="featured-dashboard glass-card">
+          <div className="dashboard-info">
+            <h3 className="text-gradient">Logistics Control Tower</h3>
+            <p>
+              Sistema de torre de controle logístico desenvolvido para monitoramento de operações
+              em tempo real, garantindo visibilidade de ponta a ponta e eficiência para 
+              demandas de e-commerce e cadeia de suprimentos.
+            </p>
+            <div className="project-tags">
+              <span className="tag">Web App</span>
+              <span className="tag">Logística</span>
+              <span className="tag">Dashboard</span>
+            </div>
+          </div>
+          <div className="dashboard-iframe-wrapper">
+            <div className="browser-header">
+              <span className="dot dot-red"></span>
+              <span className="dot dot-yellow"></span>
+              <span className="dot dot-green"></span>
+            </div>
+            <iframe 
+              title="Logistics Control Tower" 
+              src="https://logisticscontroltower-six.vercel.app/" 
+              frameBorder="0" 
+              allowFullScreen={true}>
+            </iframe>
+          </div>
+        </div>
+
       </div>
     </section>
   );
